@@ -1,0 +1,3 @@
+obrázky po hoveru aby se scalovali
+aby mizely koncový pointery když se to už nesmí pohnout
+autohejbání

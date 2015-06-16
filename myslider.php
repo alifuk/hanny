@@ -28,6 +28,15 @@
 
 </div>
 
+<div class="whiteArea">
+    
+    <img src="" class="bigImg">
+        
+    
+</div>
+
+
+
 
 
 
@@ -35,11 +44,15 @@
 
 <script>
 
+    var moveStep = 800;
+    var timerTime = 3000; //časovač v ms po kolika se slider automaticky pohne
+    var canMove = true; //pokud je kurzor nad sliderem, tak se to nebude pohybovat
+    var movesRight = true;
     $(document).ready(function () {
         nastavVysku();
 
-        var moveStep = 800;
-
+        $(".whiteArea").hide();
+        
         $(".arrowLeft").click(function () {
             move(moveStep);
         });
@@ -48,14 +61,16 @@
             move(-1 * moveStep);
         });
 
-        $(".fotka").hover(function(){
-            $(this).addClass("fotkaScaleIn");
-        },function(){
-            
+        $(".arrowsContainer").hover(function () {
+            canMove = false;
+        }, function () {
+            canMove = true;
         });
 
 
 
+
+        timeruj();
 
 
 
@@ -65,6 +80,19 @@
     $(window).resize(function () {
         nastavVysku();
     });
+
+    function timeruj() {
+        setTimeout(function () {
+            if (canMove) {
+                if (movesRight) {
+                    move(-moveStep);
+                } else {
+                    move(moveStep);
+                }
+            }
+            timeruj()
+        }, timerTime);
+    }
 
     function nastavVysku() {
 
@@ -100,10 +128,12 @@
         var vlevoInt = parseInt(vlevo.substring(0, vlevo.length - 2)) + imoveStep;
         if (vlevoInt >= 0) {
             vlevoInt = 0;
+            movesRight = true;
         }
 
         if (vlevoInt + sirka <= +$(window).width()) {
             vlevoInt = -sirka + $(window).width();
+            movesRight = false;
         }
 
         $(".myslider").css("left", (vlevoInt + "px").toString());

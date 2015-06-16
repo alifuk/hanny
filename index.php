@@ -13,16 +13,19 @@ and open the template in the editor.
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        
+        <img src="./img/logo.png" class="logoBG">
 
         <div class="spacer" ></div>
+
         <div class="menuObal" >
 
             <div class="menuNadpis" >
-                <h1>Hanny Photography</h1>
+                <h1><img src="./img/logo.png" class="logoMini">Hanny Photography</h1>
             </div>
 
             <div class="menuPolozky" >
-                Info | Kontakt | Ceník
+                <span class="menuPolozka menuInfo">Info</span> | <span class="menuPolozka menuKontakt">Kontakt</span> | <span class="menuPolozka menuCenik">Ceník</span>
             </div>
 
             <div class="menuKategorie" >
@@ -38,7 +41,23 @@ and open the template in the editor.
         <img src="./img/site.png" class="sites">
 
 
+        <script>
+            $(document).ready(function () {
 
+                setSpacer();
+            });
+
+            $(window).resize(function () {
+
+
+                setSpacer();
+            });
+
+            function setSpacer() {
+                $(".spacer").height($(window).height() / 100 * 15);
+            }
+
+        </script>
 
     </body>
 </html>

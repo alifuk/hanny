@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
 body{
     margin: 0px;
     padding: 0;
@@ -12,18 +19,37 @@ body{
 
 .spacer{
     width: 100%; 
-    height: 95px; 
+    height: 30%; 
     position: relative;
+}
+
+.logoBG{
+    position: fixed;
+    z-index: 0;
+    opacity: 0.1;
+    top: -67px;
+    left: -30px;
+}
+
+.logoMini{
+    height: 55px;
+
+    position: fixed;
+    display: none;
 }
 
 .menuObal{
     position: relative;
 
-    width: 61%;
+    width: 71%;
     margin: 0 auto;
-    height: 114px;
+    overflow: auto;
+    height: auto;
     margin-bottom: 10px;
+    /* word-wrap: break-word; */
+    max-width: 1000px;
 }
+
 
 
 .menuNadpis{
@@ -43,24 +69,39 @@ body{
     color: #0080FF;
 }
 
+
 .menuPolozky{
     font-size: 15px;
 
     font-weight: 500;
-    right: 40px;
-    position: absolute;
-    top: 44px;
-    cursor: pointer;
+    right: 0px;
+    position: relative;
+    float: right;
+    top: 0px;
     color: #555;
+    padding: 20px 0;
+}
+
+.menuPolozka{    
+    cursor: pointer;  
+    color: #000;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.menuPolozka:hover{  
+    color: #888;
 }
 
 .menuKategorie{
-    position: absolute;
+    position: relative;
 
     bottom: 0;
     font-size: 13px;
-    left: 50px;
+    padding-left: 30px;
     font-weight: 300;
+    clear: both;
+    float: left;
     cursor: pointer;
 }
 
@@ -82,10 +123,10 @@ body{
     display: block;
     left: 0px;
     top: 0;
-    
+
     transition-property: all;
     transition-duration: 0.5s;
-    
+
     /* vertical-align: top; */    
     /* float: none; */
 }
@@ -109,8 +150,9 @@ body{
 }
 
 .arrowsContainer{
-    position: fixed;
+    position: absolute;
 
+    cursor: pointer;
     z-index: 0;
     display: table;
     vertical-align: middle;
@@ -119,11 +161,12 @@ body{
     /* width: 100%; */
     /* bottom: 0; */
     z-index: 1000;
+    clear: both;
 }
 
 .vCenter{
     display: table-cell;
-    
+
     vertical-align: middle;
     height: 50px;
     /* z-index: 1000; */
@@ -139,6 +182,14 @@ body{
     left: 5px;
     float: left;
     z-index: 1000;
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.arrowLeft:hover{    
+    opacity: 0.5;
 }
 
 .arrowRight{
@@ -148,6 +199,15 @@ body{
     right: 5px;
     height: 56px;
     float: right;
+
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.arrowRight:hover{    
+    opacity: 0.5;
 }
 
 .imgArrowLeft{
@@ -160,5 +220,17 @@ body{
     height: 100%;
 }
 
+.whiteArea{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 40px;
+    left: 0;
+    background-color: rgba(255,255,255, 0.3);
+}
 
-
+.bigImg{
+    width: 100%;
+    height: 100%;
+}
