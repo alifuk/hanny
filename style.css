@@ -76,14 +76,23 @@ body{
 .myslider{
     position: relative;
 
-    height: 350px;
+    //height: 350px;
     width: 50000px;
     overflow: hidden;
     display: block;
+    left: 0px;
+    top: 0;
+    
+    transition-property: all;
+    transition-duration: 0.5s;
+    
+    /* vertical-align: top; */    
+    /* float: none; */
 }
 
 .fotkaObal{
     float: left;
+
     display: table-cell;
 }
 
@@ -91,36 +100,51 @@ body{
     transition-property: transform;
     transition-duration: 0.3s;
     position:relative;
+
 }
 
-.fotka:hover{
+.fotkaScaleIn{
     transform: scale(1.1);
+
 }
 
 .arrowsContainer{
-    position: absolute;
-    z-index: 1000;
+    position: fixed;
+
+    z-index: 0;
     display: table;
     vertical-align: middle;
-    height: 100%;
+    /* height: 100%; */
+    /* top: 0; */
+    /* width: 100%; */
+    /* bottom: 0; */
+    z-index: 1000;
 }
 
 .vCenter{
-    display: table-cell;    
+    display: table-cell;
+    
     vertical-align: middle;
     height: 50px;
+    /* z-index: 1000; */
 }
 
 .arrowLeft{
     display: block;
+
+    /* vertical-align: middle; */
     height: 56px;
     position: relative;
+    /* margin: auto; */
     left: 5px;
     float: left;
+    z-index: 1000;
 }
 
 .arrowRight{
     position: relative;    
+    /* vertical-align: middle; */
+
     right: 5px;
     height: 56px;
     float: right;
@@ -128,6 +152,8 @@ body{
 
 .imgArrowLeft{
     height: 100%;
+
+    /* z-index: 1000; */
 }
 
 .imgArrowRight{
