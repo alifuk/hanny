@@ -1,0 +1,138 @@
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: Helvetica,arial,sans-serif;    font-weight: normal;    
+    font-family: 'Open Sans', sans-serif;
+    /* line-height: 1.2em; */    
+    text-transform: uppercase;    letter-spacing: 0px;    font-weight: 700;    font-style: normal;    
+    font-size: 23px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.spacer{
+    width: 100%; 
+    height: 95px; 
+    position: relative;
+}
+
+.menuObal{
+    position: relative;
+
+    width: 61%;
+    margin: 0 auto;
+    height: 114px;
+    margin-bottom: 10px;
+}
+
+
+.menuNadpis{
+    float: left;
+
+    font-size: 19px;
+}
+
+.menuNadpis h1{
+    color: #000;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.3s;
+
+}
+.menuNadpis h1:hover{    
+    color: #0080FF;
+}
+
+.menuPolozky{
+    font-size: 15px;
+
+    font-weight: 500;
+    right: 40px;
+    position: absolute;
+    top: 44px;
+    cursor: pointer;
+    color: #555;
+}
+
+.menuKategorie{
+    position: absolute;
+
+    bottom: 0;
+    font-size: 13px;
+    left: 50px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sites{
+    top: 25px;
+
+    position: relative;
+    left: 355px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.myslider{
+    position: relative;
+
+    height: 350px;
+    width: 50000px;
+    overflow: hidden;
+    display: block;
+}
+
+.fotkaObal{
+    float: left;
+    display: table-cell;
+}
+
+.fotka{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    position:relative;
+}
+
+.fotka:hover{
+    transform: scale(1.1);
+}
+
+.arrowsContainer{
+    position: absolute;
+    z-index: 1000;
+    display: table;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.vCenter{
+    display: table-cell;    
+    vertical-align: middle;
+    height: 50px;
+}
+
+.arrowLeft{
+    display: block;
+    height: 56px;
+    position: relative;
+    left: 5px;
+    float: left;
+}
+
+.arrowRight{
+    position: relative;    
+    right: 5px;
+    height: 56px;
+    float: right;
+}
+
+.imgArrowLeft{
+    height: 100%;
+}
+
+.imgArrowRight{
+    height: 100%;
+}
+
+
+
