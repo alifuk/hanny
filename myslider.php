@@ -1,38 +1,40 @@
+<div class="slider">
 
-<div class="arrowsContainer">
-    <div class="vCenter">
-        <div class="arrowLeft"><img src="./img/left.png" class="imgArrowLeft"></div>
-        <div class="arrowRight"><img src="./img/right.png" class="imgArrowRight"></div>
+    <div class="arrowsContainer">
+        <div class="vCenter">
+            <div class="arrowLeft"><img src="./img/left.png" class="imgArrowLeft"></div>
+            <div class="arrowRight"><img src="./img/right.png" class="imgArrowRight"></div>
+        </div>
     </div>
-</div>
 
-<div class="myslider">
+    <div class="myslider">
 
-    <?php
-    $dir = "./foto/muzi/";
-    $files = scandir($dir, 1);
+        <?php
+        $dir = "./foto/muzi/";
+        $files = scandir($dir, 1);
 
-    $zindex = 10;
-    foreach ($files as $fotka) {
-        if ($fotka != "." && $fotka != "..") {
-            echo "<div class='fotkaObal'><img  src='" . $dir . $fotka . "' class='fotka'/ style='z-index:" . $zindex . ";'></div>";
-            if ($zindex % 2 == 0) {
-                $zindex+= 3;
-            } else {
-                $zindex--;
+        $zindex = 10;
+        foreach ($files as $fotka) {
+            if ($fotka != "." && $fotka != "..") {
+                echo "<div class='fotkaObal'><img  src='" . $dir . $fotka . "' class='fotka'/ style='z-index:" . $zindex . ";'></div>";
+                if ($zindex % 2 == 0) {
+                    $zindex+= 3;
+                } else {
+                    $zindex--;
+                }
             }
         }
-    }
-    ?>
+        ?>
 
 
-</div>
+    </div>
 
-<div class="whiteArea">
-    
-    <img src="" class="bigImg">
-        
-    
+    <div class="whiteArea">
+
+        <img src="" class="bigImg">
+
+
+    </div>
 </div>
 
 
@@ -52,7 +54,7 @@
         nastavVysku();
 
         $(".whiteArea").hide();
-        
+
         $(".arrowLeft").click(function () {
             move(moveStep);
         });

@@ -4,6 +4,10 @@
     border: 0;
 }
 
+.clear{
+    clear: both;
+}
+
 
 body{
     margin: 0px;
@@ -11,17 +15,61 @@ body{
     font-family: Helvetica,arial,sans-serif;    font-weight: normal;    
     font-family: 'Open Sans', sans-serif;
     /* line-height: 1.2em; */    
-    text-transform: uppercase;    letter-spacing: 0px;    font-weight: 700;    font-style: normal;    
-    font-size: 23px;
+    text-transform: uppercase;    letter-spacing: 0px;    
+    font-weight: 500;    font-style: normal;    
+    font-size: 15px;
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 58px;
+}
+
+h4{
+
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    
+
+}
+
+p{
+    margin-bottom: 14px;
+
+    word-wrap: break-word;
+    font-weight: 200;
+    text-transform: none;
+}
+
+tr{
+    margin-bottom: 5px;
+}
+
+.unrotated{
+    transform: rotateY(0deg) !important;
+}
+
 
 .spacer{
     width: 100%; 
     height: 30%; 
     position: relative;
 }
+
+
 
 .logoBG{
     position: fixed;
@@ -45,7 +93,7 @@ body{
     margin: 0 auto;
     overflow: auto;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     /* word-wrap: break-word; */
     max-width: 1000px;
 }
@@ -56,6 +104,7 @@ body{
     float: left;
 
     font-size: 19px;
+    /* overflow: visible; */
 }
 
 .menuNadpis h1{
@@ -64,9 +113,10 @@ body{
     transition-property: color;
     transition-duration: 0.3s;
 
+    /* overflow: visible; */
 }
 .menuNadpis h1:hover{    
-    color: #0080FF;
+    color: #238dfa;
 }
 
 
@@ -103,6 +153,7 @@ body{
     clear: both;
     float: left;
     cursor: pointer;
+    /* overflow-y: hidden; */
 }
 
 .sites{
@@ -112,6 +163,14 @@ body{
     left: 355px;
     cursor: pointer;
     width: 300px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    display: block;
+}
+
+.slider{    
+    transform: rotateY(90deg);
 }
 
 .myslider{
@@ -233,4 +292,158 @@ body{
 .bigImg{
     width: 100%;
     height: 100%;
+}
+
+
+
+.trippleObal{
+    position: relative;
+
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.trippieOut{
+    width: 33%;
+
+    min-width: 200px;
+    position: relative;
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.trippieIn{
+
+    margin: 0 auto;    
+    position: relative;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    padding: 11px;
+    border-radius: 1px;
+
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.trred{
+    border-color: #ee1a8d;
+    color: #ee1a8d;    
+}
+
+.trred:hover{
+    color: #FFF; 
+    background-color: #ee1a8d;
+}
+
+.trblue{
+    border-color: #238dfa;
+    color: #238dfa; 
+}
+.trblue:hover{
+    color: #FFF; 
+    background-color: #238dfa;
+}
+
+.trgreen{
+    border-color: #63cc6b;
+    color: #77d202;  
+}
+.trgreen:hover{
+    color: #FFF; 
+    background-color: #63cc6b;
+}
+
+
+.info, .kontakt, .cenik{
+    width: 100%;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: auto;
+    
+    
+    
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: rotateY(90deg);
+}
+
+
+
+.info{
+
+
+
+}
+
+.spolupraceimg{
+    width: 100%; 
+    max-width: 350px; 
+    position: relative;
+    /* margin: 0px 19px; */
+}
+
+.spolupracespace{
+    margin-top: 42px;
+    overflow: auto;
+}
+
+.prvni{
+    
+}
+
+
+.kontakt{
+    overflow: auto;
+
+
+
+}
+
+
+.kontaktImg{
+    float: left;
+
+    width: 250px;
+    margin-right: 45px;
+    border-radius: 2px;
+}
+
+.kontaktUdaje{
+    margin-top: 46px;
+}
+
+.socicon{
+    width: 56px;    
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.otocka{    
+    animation-name: otocka;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes otocka {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% {transform: rotateY(360deg);}
+}
+
+
+
+
+.cenik{
+
+
+
 }
