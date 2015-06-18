@@ -13,10 +13,13 @@ and open the template in the editor.
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
     <body>
-
+        
+        <div class="prouzek" ></div>
         <img src="./img/logo.png" class="logoBG">
 
         <div class="spacer" ></div>
+        
+        <div class="telnum">Tel.: 775 139 153</div>
 
         <div class="menuObal" >
 
@@ -29,7 +32,7 @@ and open the template in the editor.
             </div>
 
             <div class="menuKategorie" >
-                Ženy ⋅ Muži ⋅ Rodina/Děti ⋅ Těhotné  ⋅ Svatby ⋅ Akt/Budoir ⋅ Retro ⋅ Sklo/Produkty ⋅ Páry
+                Ženy ⋅ Rodina/Děti ⋅ Svatby  ⋅ Akt/Budoir ⋅ Těhotné ⋅ Páry ⋅ Muži ⋅ Retro ⋅ Produkty
             </div>
 
         </div>
@@ -45,7 +48,7 @@ and open the template in the editor.
 
 
             <div class="prvni">
-                <h3 style="color: #238dfa;">První focení</h3>
+                <h3 style="color: #542B72;">První focení</h3>
                 <p>Základem je se den před focením pokud možno dobře vyspat, v den focení se nedoporučuje návštěva kosmetiky ani solária a pokud budeme fotit akty je důležité mít volnější prádlo, aby nebyly na kůži žádné známky nošení – sice pracuji následně s Photoshopem, ale jsem ráda, když fotka vypadá, co nejlépe již po zmáčknutí spouště a Vy přeci jen dostanete fota všechna, nejen vyretušovaná :-)</p>
                 <p>Na focení si sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
                 <p>Při focení v páru nebo u rodinného focení je dobré vše dobře promyslet a sladit dopředu, ať je výsledek na fotografii příjemný.</p>
@@ -57,23 +60,23 @@ and open the template in the editor.
                 <h3 style="color: #ee1a8d;">Spolupráce</h3>
 
                 <div>                    
-                    <img style="float: left; margin-right: 30px;" src="./img/preciosa.png" class="rotate spolupraceimg">
+                    <img style="float: left; margin-right: 30px;" src="./img/preciosa.png" class="spolupraceimg">
                     <h4 style="padding-top: 30px;">Interní fotograf 2014-2015</h4>
                     <h5>Fotografování pro: René Roubíček, Rony Plesl, Evaa Eisler, Jakub Polanka, Jaroslav Bejvl, Jiří Šuhájek, ...</h5>                    
                 </div>
 
                 <div class="clear spolupracespace">                    
-                    <img style="float: right; margin-left: 30px;" src="./img/aveniro.png" class="rotate spolupraceimg">
+                    <img style="float: right; margin-left: 30px;" src="./img/aveniro.png" class="spolupraceimg">
                     <h4 style="padding-top: 30px;">Skleněné pilníky Aveniro</h4>                   
                 </div>
 
                 <div class="clear spolupracespace">                    
-                    <img style="float: left; margin-right: 30px;" src="./img/georgia.gif" class="rotate spolupraceimg">
+                    <img style="float: left; margin-right: 30px;" src="./img/georgia.gif" class="spolupraceimg">
                     <h4 style="padding-top: 30px;">Rodinný restaurant Georgia</h4>                   
                 </div>
 
                 <div class="clear spolupracespace">                    
-                    <img style="float: right; margin-left: 30px;" src="./img/thestudio.png" class="rotate spolupraceimg">
+                    <img style="float: right; margin-left: 30px;" src="./img/thestudio.png" class="spolupraceimg">
                     <h4 style="padding-top: 30px;"> </h4>  
                     <h4 style="padding-top: 30px;">The Studio - zakázkové sklo</h4>                   
                 </div>
@@ -81,7 +84,7 @@ and open the template in the editor.
             </div>
 
             <div class="workshopy clear spolupracespace">
-                <h3 style="color: #63cc6b;">Workshopy, kurzy, media</h3>
+                <h3 style="color: #A43741;">Workshopy, kurzy, media</h3>
 
                 <table style="margin: 0 auto;">
 
@@ -112,10 +115,14 @@ and open the template in the editor.
             <img class="kontaktImg" src="./img/hanny.jpg">
             <div class="kontaktUdaje">
                 <h4><b>Hanny Kronďáková</b></h4>
-                <h4>775 139 153</h4>
+                <h4 style="text-transform: none;">Email: 775 139 153</h4>
+                <h4 style="text-transform: none;">Tel.: 775 139 153</h4>
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
                 <img src="./img/fb.png" class="socicon fb">
+                <img src="./img/instagram.png" class="socicon instagram">
+                <img src="./img/flickr.png" class="socicon flickr">
+                <img src="./img/linkedin.png" class="socicon linkedin">
                 <img src="./img/maps.png" class="socicon mapy">
             </div>
 
@@ -125,15 +132,67 @@ and open the template in the editor.
         <div class="cenik">
 
             <h2>Ceník</h2>
+            <div class="trippleObal">
+                <span class="trippieOut"><span class="trippieIn trred portretB">Portrétní<br> fotografie</span></span>
+                <span class="trippieOut"><span class="trippieIn trblue svatebniB">Svatební<br> fotografie</span></span>
+                <span class="trippieOut"><span class="trippieIn trgreen produktyB">Produktová<br> fotografie</span></span>
+            </div>
             <p>Ceník platný od 1.9.2014</p>
             <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b>kontaktujte.</b></p>
 
-            <div class="trippleObal">
-                <span class="trippieOut"><span class="trippieIn trred portretB">Chci portét</span></span>
-                <span class="trippieOut"><span class="trippieIn trblue svatebniB">Chci svatební fotografie</span></span>
-                <span class="trippieOut"><span class="trippieIn trgreen produktyB">Chci fotky produktů</span></span>
-            </div>
-
+            <h3>FOCENÍ STANDART</h3>
+            <p>Lze uplatnit pro focení rodinné, foto s dětmi, rande, portréty, těhotné</p>
+            <ul>
+                <li>cca 1 hodina focení</li>
+                <li>10 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle výběru v plném rozlišení na CD/DVD</li>
+                <li>tisk buď všech 10 ks o velikosti A6 nebo 4 ks o velikosti A5 nebo 2ks o velikosti A4</li>
+                <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
+                <li>potištěné DVD</li>
+            </ul>
+            
+            <p>Cena: 1000 Kč</p>
+            
+            <h3>FOCENÍ MINI</h3>
+            <p>Lze uplatnit maximálně pro 2 osoby</p>
+            <ul>
+                <li>cca 30 min focení</li>
+                <li>5 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho v plném rozlišení na CD/DVD</li>
+                <li>tisk všech fotografií o velikosti A6 nebo 2 ks o velikosti A5 nebo 1 ks o velikosti A4</li>
+                <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
+                <li>potištěné DVD</li>
+            </ul>
+            
+            <p>Cena: 650 Kč</p>
+            
+            <h3>BOUDOIR/GLAMOUR/AKT</h3>
+            <p>Pouze pro 1 osobu</p>
+            <ul>
+                <li>cca 1,5 hodiny příprav + 1 hod focení</li>
+                <li>Vhodné jako dárek pro partnera</li>
+                <li>V ceně je zahrnuté líčení + úprava</li>
+                <li>12 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle výběru v plném rozlišení na CD/DVD</li>
+                <li>12 ks vytištěných o velikosti A5</li>
+                <li>Každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
+                <li>Dárkové balení včetně potištěného DVD Vaší fotografií</li>
+            </ul>
+            
+            <p>Cena: 1800 Kč</p>
+                
+            
+            <h3>INFO NAVÍC:</h3>
+            
+            <p>Líčení + účes k focení lez objednat za 500,-Kč (čas navíc cca 1,5 hod) nebo jednotlivě 300,-Kč.</p>
+            <p>Na každou variantu focení je možné vystavit dárkový poukaz s vlastním věnováním.</p>
+            <p>Možnosti tisku navíc</p>
+            <ul>
+                <li>A6 (cca 10x15cm) + 10 Kč</li>
+                <li>A5 (cca 15x20m) + 25 Kč</li>
+                <li>A4 (cca 20x30cm) + 50 Kč</li>
+            </ul>
+            <p><b>Neretušované fotografie neposkytuji!!!!</b></p>
+            <p>Fotografie zálohuji cca 6 měsíců.</p>
+            <p>Dle dohody mohu dojet fotografovat já k Vám, cena je poté navýšena o dopravu a techniky.</p>
+                
 
         </div>
 
@@ -147,60 +206,48 @@ and open the template in the editor.
 
 
         <script>
+            var trvaniPrechodu = 500;
             var zvoleneMenu = "";
             $(document).ready(function () {
 
-                setSpacer();
-                
-                
 
-                hideAll();
-                
-                
+                function zobraz(coZobrazit) {
+                    if (zvoleneMenu !== coZobrazit) {
+                        zvoleneMenu = coZobrazit;
+                        hideAll();
+                        
+                        setTimeout(function () {
+                            $("."+coZobrazit).slideToggle(trvaniPrechodu);
+                        }, trvaniPrechodu);
+                    }
+
+                }
+
+                setSpacer();
+
+                $(".info, .kontakt, .cenik, .slider").hide();
                 $(".slider").show();
-                $(".slider").addClass("unrotated");
+
+
+
+
+                $(".menuKategorie").click(function () {
+                    zobraz("slider");
+                });
+
 
                 $(".menuInfo").click(function () {
-                    if (zvoleneMenu !== "info") {
-                        zvoleneMenu = "info";
-                        hideAll();
-
-                        setTimeout(function () {
-                            $(".info").show(400, function () {
-                                $(".info").addClass("unrotated");
-                            });
-                        }, 600);
-                    }
+                    zobraz("info");
                 });
+
 
                 $(".menuKontakt").click(function () {
-
-                    if (zvoleneMenu !== "kontakt") {
-                        zvoleneMenu = "kontakt";
-                        hideAll();
-
-                        setTimeout(function () {
-                            $(".kontakt").show(400, function () {
-                                $(".kontakt").addClass("unrotated");
-                            });
-                        }, 600);
-                    }
+                    zobraz("kontakt");
 
                 });
-                
+
                 $(".menuCenik").click(function () {
-
-                    if (zvoleneMenu != "cenik") {
-                        zvoleneMenu = "cenik";
-                        hideAll();
-
-                        setTimeout(function () {
-                            $(".cenik").show(400, function () {
-                                $(".cenik").addClass("unrotated");
-                            });
-                        }, 600);
-                    }
-
+                    zobraz("cenik");
                 });
 
                 $(".fb").click(function () {
@@ -235,8 +282,8 @@ and open the template in the editor.
 
 
                 $(".socicon,.rotate").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
-                    $(this).removeClass("otocka")
-                })
+                    $(this).removeClass("otocka");
+                });
 
                 $(".socicon,.rotate").hover(function () {
                     $(this).addClass("otocka");
@@ -248,8 +295,6 @@ and open the template in the editor.
             });
 
             $(window).resize(function () {
-
-
                 setSpacer();
             });
 
@@ -258,19 +303,12 @@ and open the template in the editor.
             }
 
             function hideAll() {
-                $(".info").removeClass("unrotated");
-                $(".kontakt").removeClass("unrotated");
-                $(".cenik").removeClass("unrotated");
+                $(".info, .kontakt, .cenik, .slider").each(function () {
 
-                $(".slider").removeClass("unrotated");
-
-                setTimeout(function () {
-                    $(".info").hide();
-                    $(".kontakt").hide();
-                    $(".cenik").hide();
-
-                    $(".slider").hide();
-                }, 500);
+                    if ($(this).css("display") != "none") {
+                        $(this).slideToggle(trvaniPrechodu);
+                    }
+                });
 
             }
 

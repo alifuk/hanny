@@ -1,3 +1,8 @@
+// palette http://paletton.com/palette.php?uid=54N0C0kl6lPbPFqgusGpJeTuj7U
+// tyrkysová: #05A8A7
+// limetková: #A6CC5D
+//fuchsiová: #E80360
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +15,8 @@
 
 
 body{
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    /* -webkit-font-smoothing: antialiased; */
     margin: 0px;
     padding: 0;
     font-family: Helvetica,arial,sans-serif;    font-weight: normal;    
@@ -24,9 +31,12 @@ body{
 
 h2{
     text-align: center;
-    font-size: 38px;
-    font-weight: 300;
+    font-size: 70px;
+    font-weight: 100;
     margin-bottom: 20px;
+    margin-top: 0px;
+    text-shadow: 0px 1px 3px #BBB;
+    color: #222;
 }
 
 h3{
@@ -41,8 +51,12 @@ h4{
 
     font-size: 22px;
     font-weight: 100;
-    margin-bottom: 10px;
     
+
+    margin-bottom: 6px;
+    
+
+    margin-top: 0;
 
 }
 
@@ -58,18 +72,31 @@ tr{
     margin-bottom: 5px;
 }
 
-.unrotated{
-    transform: rotateY(0deg) !important;
+.prouzek{
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    top: 0;
+        
+    background-color: #05A8A7; 
 }
-
-
 .spacer{
     width: 100%; 
     height: 30%; 
     position: relative;
 }
 
-
+.telnum{
+    position: fixed;
+    
+    top: 52px;
+    /* left: 79%; */
+    right: 7.5%;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: none;
+    color: #854C97;
+}
 
 .logoBG{
     position: fixed;
@@ -77,13 +104,15 @@ tr{
     opacity: 0.1;
     top: -67px;
     left: -30px;
+    display: none;
 }
 
 .logoMini{
-    height: 55px;
+    height: 59px;
 
-    position: fixed;
-    display: none;
+    position: relative;
+    top: 5px;
+    /* display: none; */
 }
 
 .menuObal{
@@ -93,7 +122,7 @@ tr{
     margin: 0 auto;
     overflow: auto;
     height: auto;
-    margin-bottom: 13px;
+    margin-bottom: 46px;
     /* word-wrap: break-word; */
     max-width: 1000px;
 }
@@ -116,7 +145,7 @@ tr{
     /* overflow: visible; */
 }
 .menuNadpis h1:hover{    
-    color: #238dfa;
+    color: #A43741;
 }
 
 
@@ -130,6 +159,7 @@ tr{
     top: 0px;
     color: #555;
     padding: 20px 0;
+    margin-top: 35px;
 }
 
 .menuPolozka{    
@@ -170,7 +200,10 @@ tr{
 }
 
 .slider{    
-    transform: rotateY(90deg);
+    //transform: rotateY(90deg);
+    
+    /*transition-property: all;
+    transition-duration: 0.2s;*/
 }
 
 .myslider{
@@ -203,7 +236,7 @@ tr{
 
 }
 
-.fotkaScaleIn{
+.fotka:hover{
     transform: scale(1.1);
 
 }
@@ -312,7 +345,7 @@ tr{
     float: left;
     text-align: center;
     box-sizing: border-box;
-    margin: 10px 0;
+    margin: 9px 0;
 }
 
 .trippieIn{
@@ -320,61 +353,77 @@ tr{
     margin: 0 auto;    
     position: relative;
     display: inline-block;
-    border-width: 1px;
-    border-style: solid;
-    padding: 11px;
     
 
-    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    
+
+    padding: 21px;
+    
+
+    border-radius: 1px;
 
 
     transition-property: all;
     transition-duration: 0.3s;
     cursor: pointer;
+    
+
+    font-size: 22px;
+
+    font-weight: 400;
+
 }
 
+.trred, .trblue, .trgreen{
+    color: #FFF;
+}
+
+.trred:hover, .trblue:hover, .trgreen:hover{
+    background-color: #FFF;
+}
+
+
 .trred{
-    border-color: #A43741;
-    color: #A43741;    
+    border-color: #A6CC5D; 
+    background-color: #A6CC5D;
 }
 
 .trred:hover{
-    color: #FFF; 
-    background-color: #A43741;
+    color: #89aa4a; 
 }
 
 .trblue{
-    border-color: #832C65;
-    color: #832C65; 
+    border-color: #854C97   ;
+    background-color: #854C97; 
 }
 .trblue:hover{
-    color: #FFF; 
-    background-color: #832C65;
+    color: #854C97; 
 }
 
 .trgreen{
-    border-color: #542B72;
-    color: #542B72;  
+    border-color: #05A8A7;
+    background-color: #05A8A7;  
 }
 .trgreen:hover{
-    color: #FFF; 
-    background-color: #542B72;
+    color: #05A8A7;    
 }
 
 
 .info, .kontakt, .cenik{
-    width: 100%;
+    width: 800px;
     padding: 20px;
-    max-width: 800px;
+    //max-width: 800px;
     margin: 0 auto;
     box-sizing: border-box;
     height: auto;
     
     
     
-    transition-property: all;
-    transition-duration: 0.3s;
-    transform: rotateY(90deg);
+    /*transition-property: all;
+    transition-duration: 0.3s;*/
+    //transform: rotateY(90deg);
 }
 
 
@@ -404,9 +453,14 @@ tr{
 
 .kontakt{
     overflow: auto;
+}
 
-
-
+.kontakt h2{
+    border-bottom-width: 0px;
+    
+    border-bottom-color: #854C97;
+    border-bottom-style: solid;
+    color: #111;
 }
 
 
@@ -419,7 +473,7 @@ tr{
 }
 
 .kontaktUdaje{
-    margin-top: 46px;
+    margin-top: 21px;
 }
 
 .socicon{
@@ -427,7 +481,8 @@ tr{
     margin-top: 10px;
     cursor: pointer;
     margin-right: 10px;
-    border-radius: 18px;
+    /* border-radius: 18px; */
+    /* box-shadow: 3px 2px 5px; */
 }
 
 .otocka{    

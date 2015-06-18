@@ -10,7 +10,7 @@
     <div class="myslider">
 
         <?php
-        $dir = "./foto/muzi/";
+        $dir = "./foto/zeny/";
         $files = scandir($dir, 1);
 
         $zindex = 10;
@@ -63,7 +63,7 @@
             move(-1 * moveStep);
         });
 
-        $(".arrowsContainer").hover(function () {
+        $(".slider").hover(function () {
             canMove = false;
         }, function () {
             canMove = true;
@@ -111,7 +111,7 @@
 
 
         $(".arrowsContainer").width($(window).width());
-        $(".arrowsContainer").height($(".myslider").height());
+        $(".arrowsContainer").height(0);
 
 
     }
