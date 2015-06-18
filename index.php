@@ -38,9 +38,9 @@ and open the template in the editor.
             <h2>Info</h2>
 
             <div class="trippleObal">
-                <span class="trippieOut"><span class="trippieIn trblue prvniB">První focení</span></span>
-                <span class="trippieOut"><span class="trippieIn trred spolupraceB">Spolupráce</span></span>
-                <span class="trippieOut"><span class="trippieIn trgreen workshopyB">Workshopy a media</span></span>
+                <span class="trippieOut"><span class="trippieIn trgreen prvniB">První focení</span></span>
+                <span class="trippieOut"><span class="trippieIn trblue spolupraceB">Spolupráce</span></span>
+                <span class="trippieOut"><span class="trippieIn trred workshopyB">Workshopy a media</span></span>
             </div>
 
 
@@ -116,6 +116,7 @@ and open the template in the editor.
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
                 <img src="./img/fb.png" class="socicon fb">
+                <img src="./img/maps.png" class="socicon mapy">
             </div>
 
 
@@ -129,8 +130,8 @@ and open the template in the editor.
 
             <div class="trippleObal">
                 <span class="trippieOut"><span class="trippieIn trred portretB">Chci portét</span></span>
-                <span class="trippieOut"><span class="trippieIn trgreen svatebniB">Chci svatební fotografie</span></span>
-                <span class="trippieOut"><span class="trippieIn trblue produktyB">Chci fotky produktů</span></span>
+                <span class="trippieOut"><span class="trippieIn trblue svatebniB">Chci svatební fotografie</span></span>
+                <span class="trippieOut"><span class="trippieIn trgreen produktyB">Chci fotky produktů</span></span>
             </div>
 
 
@@ -156,6 +157,7 @@ and open the template in the editor.
                 hideAll();
                 
                 
+                $(".slider").show();
                 $(".slider").addClass("unrotated");
 
                 $(".menuInfo").click(function () {

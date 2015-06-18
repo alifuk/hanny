@@ -323,7 +323,9 @@ tr{
     border-width: 1px;
     border-style: solid;
     padding: 11px;
-    border-radius: 1px;
+    
+
+    border-radius: 5px;
 
 
     transition-property: all;
@@ -332,31 +334,31 @@ tr{
 }
 
 .trred{
-    border-color: #ee1a8d;
-    color: #ee1a8d;    
+    border-color: #A43741;
+    color: #A43741;    
 }
 
 .trred:hover{
     color: #FFF; 
-    background-color: #ee1a8d;
+    background-color: #A43741;
 }
 
 .trblue{
-    border-color: #238dfa;
-    color: #238dfa; 
+    border-color: #832C65;
+    color: #832C65; 
 }
 .trblue:hover{
     color: #FFF; 
-    background-color: #238dfa;
+    background-color: #832C65;
 }
 
 .trgreen{
-    border-color: #63cc6b;
-    color: #77d202;  
+    border-color: #542B72;
+    color: #542B72;  
 }
 .trgreen:hover{
     color: #FFF; 
-    background-color: #63cc6b;
+    background-color: #542B72;
 }
 
 
@@ -424,6 +426,8 @@ tr{
     width: 56px;    
     margin-top: 10px;
     cursor: pointer;
+    margin-right: 10px;
+    border-radius: 18px;
 }
 
 .otocka{    
