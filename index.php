@@ -13,13 +13,15 @@ and open the template in the editor.
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        
+
         <div class="prouzek" ></div>
         <img src="./img/logo.png" class="logoBG">
 
-        <div class="spacer" ></div>
-        
-        <div class="telnum">Tel.: 775 139 153</div>
+        <div class="spacer" >
+
+            <div class="telnum">Tel.: 775 139 153</div>
+        </div>
+
 
         <div class="menuObal" >
 
@@ -48,7 +50,7 @@ and open the template in the editor.
 
 
             <div class="prvni">
-                <h3 style="color: #542B72;">První focení</h3>
+                <h3 style="color: #05A8A7;" class="bottomBorder">První focení</h3>
                 <p>Základem je se den před focením pokud možno dobře vyspat, v den focení se nedoporučuje návštěva kosmetiky ani solária a pokud budeme fotit akty je důležité mít volnější prádlo, aby nebyly na kůži žádné známky nošení – sice pracuji následně s Photoshopem, ale jsem ráda, když fotka vypadá, co nejlépe již po zmáčknutí spouště a Vy přeci jen dostanete fota všechna, nejen vyretušovaná :-)</p>
                 <p>Na focení si sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
                 <p>Při focení v páru nebo u rodinného focení je dobré vše dobře promyslet a sladit dopředu, ať je výsledek na fotografii příjemný.</p>
@@ -57,12 +59,12 @@ and open the template in the editor.
             </div>
 
             <div class="spoluprace">
-                <h3 style="color: #ee1a8d;">Spolupráce</h3>
+                <h3 style="color: #854C97;" class="bottomBorder">Spolupráce</h3>
 
                 <div>                    
                     <img style="float: left; margin-right: 30px;" src="./img/preciosa.png" class="spolupraceimg">
                     <h4 style="padding-top: 30px;">Interní fotograf 2014-2015</h4>
-                    <h5>Fotografování pro: René Roubíček, Rony Plesl, Evaa Eisler, Jakub Polanka, Jaroslav Bejvl, Jiří Šuhájek, ...</h5>                    
+                    <h5>Fotografování pro: René Roubíček, Rony Plesl, Eva Eisler, Jakub Polanka, Jaroslav Bejvl, Jiří Šuhájek, ...</h5>                    
                 </div>
 
                 <div class="clear spolupracespace">                    
@@ -84,7 +86,7 @@ and open the template in the editor.
             </div>
 
             <div class="workshopy clear spolupracespace">
-                <h3 style="color: #A43741;">Workshopy, kurzy, media</h3>
+                <h3 style="color: #89aa4a;" class="bottomBorder">Workshopy, kurzy, media</h3>
 
                 <table style="margin: 0 auto;">
 
@@ -115,7 +117,7 @@ and open the template in the editor.
             <img class="kontaktImg" src="./img/hanny.jpg">
             <div class="kontaktUdaje">
                 <h4><b>Hanny Kronďáková</b></h4>
-                <h4 style="text-transform: none;">Email: 775 139 153</h4>
+                <h4 style="text-transform: none;">Email: <span class="emailName"></span>@gmail.com</h4>
                 <h4 style="text-transform: none;">Tel.: 775 139 153</h4>
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
@@ -138,8 +140,10 @@ and open the template in the editor.
                 <span class="trippieOut"><span class="trippieIn trgreen produktyB">Produktová<br> fotografie</span></span>
             </div>
             <p>Ceník platný od 1.9.2014</p>
-            <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b>kontaktujte.</b></p>
+            <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b class="hrefkontakt" style="cursor: pointer;">kontaktujte.</b></p>
 
+            <h3 class="bottomBorder infoh3 portret" style="color: #A6CC5D;">Portrétní fotografie</h3>
+            
             <h3>FOCENÍ STANDART</h3>
             <p>Lze uplatnit pro focení rodinné, foto s dětmi, rande, portréty, těhotné</p>
             <ul>
@@ -149,9 +153,9 @@ and open the template in the editor.
                 <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
                 <li>potištěné DVD</li>
             </ul>
-            
+
             <p>Cena: 1000 Kč</p>
-            
+
             <h3>FOCENÍ MINI</h3>
             <p>Lze uplatnit maximálně pro 2 osoby</p>
             <ul>
@@ -161,9 +165,9 @@ and open the template in the editor.
                 <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
                 <li>potištěné DVD</li>
             </ul>
-            
+
             <p>Cena: 650 Kč</p>
-            
+
             <h3>BOUDOIR/GLAMOUR/AKT</h3>
             <p>Pouze pro 1 osobu</p>
             <ul>
@@ -175,12 +179,12 @@ and open the template in the editor.
                 <li>Každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
                 <li>Dárkové balení včetně potištěného DVD Vaší fotografií</li>
             </ul>
-            
+
             <p>Cena: 1800 Kč</p>
-                
-            
+
+
             <h3>INFO NAVÍC:</h3>
-            
+
             <p>Líčení + účes k focení lez objednat za 500,-Kč (čas navíc cca 1,5 hod) nebo jednotlivě 300,-Kč.</p>
             <p>Na každou variantu focení je možné vystavit dárkový poukaz s vlastním věnováním.</p>
             <p>Možnosti tisku navíc</p>
@@ -192,7 +196,83 @@ and open the template in the editor.
             <p><b>Neretušované fotografie neposkytuji!!!!</b></p>
             <p>Fotografie zálohuji cca 6 měsíců.</p>
             <p>Dle dohody mohu dojet fotografovat já k Vám, cena je poté navýšena o dopravu a techniky.</p>
-                
+            
+            
+            <h3 class="bottomBorder infoh3 svatebni" style="color: #854C97;">Svatební fotografie</h3>
+            
+            <h3>BALÍČEK STANDART</h3>
+            <ul>
+                <li>Nelze využít v sobotu!!!</li>
+                <li>fotografování od příjezdu nevěsty, obřad, společné foto, novomanželské foto</li>
+                <li>maximálně 3 hodiny fotografování</li>
+                <li>30 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho výběru v rozlišení na DVD + ostatní nafocené</li>
+                <li>DVD potištěné Vaší svatební fotografií</li>
+                <li>dárkové balení</li>
+                <li>tisk 30 ks fotografií o velikosti A6 nebo 15 ks o velikosti A5</li>
+                <li>každá další retušovaná fotografie + 50 Kč</li>
+            </ul>
+
+            <p>Cena: 3 000 Kč</p>
+            
+            
+            <h3>BALÍČEK PREMIUM - dopolední varianta</h3>
+            <ul>
+                <li>fotografování od ranních příprav nevěsty i ženicha, zdobení aut, momentky, obřad, společné foto, novomanželské foto</li>
+                <li>maximálně 5 hodin fotografování</li>
+                <li>50 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho výběru v rozlišení na DVD + ostatní nafocené</li>
+                <li>DVD potištěné Vaší svatební fotografií</li>
+                <li>dárkové balení</li>
+                <li>tisk 50 ks fotografií o velikosti A6 nebo 25 ks o velikosti A5</li>
+                <li>každá další retušovaná fotografie + 50 Kč</li>
+            </ul>
+
+            <p>Cena: 4 500 Kč</p>
+            
+            
+            <h3>BALÍČEK PREMIUM - odpolední varianta</h3>
+            <ul>
+                <li>fotografování od příjezdu nevěsty, obřad, společné foto, novomanželské foto, rozbíjení talíře, oběd, krájení dortu, první novomanželský tanec</li>
+                <li>maximálně 5 hodin fotografování / každá další hodina + 500,- Kč</li>
+                <li>50 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho výběru v rozlišení na DVD + ostatní nafocené</li>
+                <li>DVD potištěné Vaší svatební fotografií</li>
+                <li>dárkové balení</li>
+                <li>tisk 50 ks fotografií o velikosti A6 nebo 25 ks o velikosti A5</li>
+                <li>každá další retušovaná fotografie + 50 Kč</li>
+            </ul>
+
+            <p>Cena: 4 500 Kč</p>
+            
+            
+            <h3>BALÍČEK TOP</h3>
+            <ul>
+                <li>fotografování od ranních příprav nevěsty i ženicha, zdobení aut, momentky, obřad, společné foto, novomanželské foto, rozbíjení talíře, oběd, krájení dortu, první novomanželský tanec, část párty</li>
+                <li>maximálně 8 hodin fotografování / každá další hodina + 500,- Kč</li>
+                <li>70 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle výběru v plném rozlišení na DVD + ostatní nafocené</li>
+                <li>DVD potištěné Vaší svatební fotografií</li>
+                <li>dárkové balení</li>
+                <li>tisk 70 ks fotografií o velikosti A6 nebo 30 ks o velikosti A5</li>
+                <li>každá další retušovaná fotografie + 50 Kč</li>
+            </ul>
+
+            <p>Cena: 7 000 Kč</p>
+            
+            <h3>DÁLE:</h3>
+            <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši cca 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
+            <p>Při fotografování odpolední varianty či varianty TOP je počítáno s obědem pro mne a mého asistenta</p>
+            <p>Dodací doba je dle mé zaneprázdněnosti cca 3 týdny, ale nebojte, ochutnávku z Vaší svatby dostanete do 3 dnů</p>
+            <p>Dopravné je 5 Kč/km nad 30 km</p>
+            <p>Nabízím také líčení nevěsty, cena včetně zkoušky je 800,-Kč</p>
+            <p>Možnost dalšího potištěného DVD Vaší fotkou (např. dárek pro rodiče, svědky)s retušovanými fotografiemi + 50</p>
+            <p>Fotografie zálohuji cca 1 rok</p>
+            <p>Nabízím také líčení nevěsty, cena včetně zkoušky je 800,-Kč</p>
+            
+            <p>Možnosti tisku navíc</p>
+            <ul>
+                <li>A6 (cca 10x15cm) + 10 Kč</li>
+                <li>A5 (cca 15x20m) + 25 Kč</li>
+                <li>A4 (cca 20x30cm) + 50 Kč</li>
+            </ul>
+
 
         </div>
 
@@ -215,9 +295,9 @@ and open the template in the editor.
                     if (zvoleneMenu !== coZobrazit) {
                         zvoleneMenu = coZobrazit;
                         hideAll();
-                        
+
                         setTimeout(function () {
-                            $("."+coZobrazit).slideToggle(trvaniPrechodu);
+                            $("." + coZobrazit).slideToggle(trvaniPrechodu);
                         }, trvaniPrechodu);
                     }
 
@@ -230,9 +310,18 @@ and open the template in the editor.
 
 
 
+                $(".menuNadpis").click(function () {
+                    zobraz("slider");
+                    setTimeout(function () {
+                        move(moveStep);
+                    }, trvaniPrechodu);
+                });
 
                 $(".menuKategorie").click(function () {
                     zobraz("slider");
+                    setTimeout(function () {
+                        move(moveStep);
+                    }, trvaniPrechodu);
                 });
 
 
@@ -241,7 +330,7 @@ and open the template in the editor.
                 });
 
 
-                $(".menuKontakt").click(function () {
+                $(".menuKontakt, .hrefkontakt").click(function () {
                     zobraz("kontakt");
 
                 });
@@ -278,6 +367,19 @@ and open the template in the editor.
 
 
 
+                $(".portretB").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $(".portret").offset().top - 10
+                    }, 1000);
+                });
+                
+                $(".svatebniB").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $(".svatebni").offset().top - 10
+                    }, 1000);
+                });
+
+
 
 
 
@@ -289,6 +391,10 @@ and open the template in the editor.
                     $(this).addClass("otocka");
                 }, function () {
                 });
+                
+                setTimeout(function(){
+                    $(".emailName").html("hanny.sv1");
+                },3000);
 
 
 

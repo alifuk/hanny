@@ -1,16 +1,13 @@
 <div class="slider">
 
-    <div class="arrowsContainer">
-        <div class="vCenter">
-            <div class="arrowLeft"><img src="./img/left.png" class="imgArrowLeft"></div>
-            <div class="arrowRight"><img src="./img/right.png" class="imgArrowRight"></div>
-        </div>
-    </div>
+    <div class="arrowLeft"><img src="./img/left.png" class="imgArrowLeft"></div>
+    <div class="arrowRight"><img src="./img/right.png" class="imgArrowRight"></div>
+
 
     <div class="myslider">
 
         <?php
-        $dir = "./foto/zeny/";
+        $dir = "./foto/zenysmall/";
         $files = scandir($dir, 1);
 
         $zindex = 10;
@@ -30,8 +27,18 @@
     </div>
 
     <div class="whiteArea">
+        <div class="whiteAreaInner">
+            <div style="display: table-cell; vertical-align: middle;/* height: 100%; *//* width: 100%; */position: relative;box-sizing: border-box;top: 0;left: 0;">
+                <img src="./img/loading.gif" class="loading">
+            </div>
+        </div>
 
-        <img src="" class="bigImg">
+
+        <div class="whiteAreaInner">
+            <img src="" class="bigImg">
+        </div>
+
+
 
 
     </div>
@@ -51,9 +58,16 @@
     var canMove = true; //pokud je kurzor nad sliderem, tak se to nebude pohybovat
     var movesRight = true;
     $(document).ready(function () {
+
+        var fotky = [];
+
+
+
         nastavVysku();
 
-        $(".whiteArea").hide();
+        $(".whiteArea").fadeTo(400, 0, function () {
+            $(".whiteArea").hide();
+        });
 
         $(".arrowLeft").click(function () {
             move(moveStep);
@@ -70,7 +84,37 @@
         });
 
 
+        $(".fotka").click(function () {
+            $(".whiteArea").show();
+            $(".whiteArea").fadeTo(400, 1);
+            canMove = false;
 
+            var fotka = new Image();
+            fotka.src = $(this).attr("src").replace("small", "big");
+
+            $(fotka).load(function () {
+
+                $(".bigImg").attr("src", $(this).attr("src").replace("small", "big"));
+                $(".bigImg").fadeTo(400, 1);
+
+            });
+
+
+
+
+
+
+
+
+        });
+
+        $(".whiteArea").click(function () {
+            $(".bigImg").fadeTo(400, 0);
+            $(".whiteArea").fadeTo(400, 0, function () {
+                $(".whiteArea").hide();
+            });
+            canMove = true;
+        });
 
         timeruj();
 
@@ -110,8 +154,9 @@
         });
 
 
-        $(".arrowsContainer").width($(window).width());
-        $(".arrowsContainer").height(0);
+
+        $(".arrowLeft").css("top", $(".myslider").height() / 2 - 56 / 2);
+        $(".arrowRight").css("top", $(".myslider").height() / 2 - 56 / 2);
 
 
     }
