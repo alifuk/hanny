@@ -23,15 +23,20 @@ and open the template in the editor.
             <div class="telnum">Tel.: 775 139 153</div>
         </div>
 
-
+        
+        
+        
         <div class="menuObal" >
 
             <div class="menuNadpis" >
                 <h1><img src="./img/logo.png" class="logoMini">Hanny Photography</h1>
             </div>
 
+
+
             <div class="menuPolozky" >
                 <span class="menuPolozka menuInfo">Info</span> | <span class="menuPolozka menuKontakt">Kontakt</span> | <span class="menuPolozka menuCenik">Ceník</span>
+
             </div>
 
             <div class="menuKategorie" >
@@ -61,7 +66,7 @@ and open the template in the editor.
             <div class="prvni">
                 <h3 style="color: #05A8A7;" class="bottomBorder">První focení</h3>
                 <p>Základem je se den před focením pokud možno dobře vyspat, v den focení se nedoporučuje návštěva kosmetiky ani solária a pokud budeme fotit akty je důležité mít volnější prádlo, aby nebyly na kůži žádné známky nošení – sice pracuji následně s Photoshopem, ale jsem ráda, když fotka vypadá, co nejlépe již po zmáčknutí spouště a Vy přeci jen dostanete fota všechna, nejen vyretušovaná :-)</p>
-                <p>Na focení si sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
+                <p>Na focení si s sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
                 <p>Při focení v páru nebo u rodinného focení je dobré vše dobře promyslet a sladit dopředu, ať je výsledek na fotografii příjemný.</p>
                 <p>A na závěr je dobré říct mi dopředu, jaká je Vaše představa, abychom věděli jakým směrem se bude focení ubírat a mohli jsme se na to dobře připravit :-) Pokud bude třeba s líčením, půjčením doplňků a šperků Vám ráda pomohu :-)</p>
 
@@ -81,13 +86,9 @@ and open the template in the editor.
                     <h4 style="padding-top: 30px;">Skleněné pilníky Aveniro</h4>                   
                 </div>
 
-                <div class="clear spolupracespace">                    
-                    <img style="float: left; margin-right: 30px;" src="./img/georgia.gif" class="spolupraceimg">
-                    <h4 style="padding-top: 30px;">Rodinný restaurant Georgia</h4>                   
-                </div>
 
                 <div class="clear spolupracespace">                    
-                    <img style="float: right; margin-left: 30px;" src="./img/thestudio.png" class="spolupraceimg">
+                    <img style="float: left; margin-left: 30px;" src="./img/thestudio.png" class="spolupraceimg">
                     <h4 style="padding-top: 30px;"> </h4>  
                     <h4 style="padding-top: 30px;">The Studio - zakázkové sklo</h4>                   
                 </div>
@@ -130,11 +131,11 @@ and open the template in the editor.
                 <h4 style="text-transform: none;">Tel.: 775 139 153</h4>
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
-                <img src="./img/fb.png" class="socicon fb">
-                <img src="./img/instagram.png" class="socicon instagram">
-                <img src="./img/flickr.png" class="socicon flickr">
-                <img src="./img/linkedin.png" class="socicon linkedin">
-                <img src="./img/maps.png" class="socicon mapy">
+                <img src="./img/fb.png" class="socicon fb" onclick="window.open('https://www.facebook.com/HannyPhotography?fref=ts','_blank');">
+                <img src="./img/instagram.png" class="socicon instagram"  onclick="window.open('https://instagram.com/hanny_photo/','_blank');">
+                <img src="./img/flickr.png" class="socicon flickr"  onclick="window.open('https://www.flickr.com/photos/127960118@N03/','_blank');">
+                <img src="./img/linkedin.png" class="socicon linkedin"  onclick="window.open('https://www.linkedin.com/profile/view?id=415112365&trk=nav_responsive_tab_profile','_blank');">
+                <img src="./img/maps.png" class="socicon mapy"  onclick="window.open('http://mapy.cz/zakladni?x=14.4663423&y=50.7805218&z=17&source=addr&id=10615252','_blank');">
             </div>
 
 
@@ -148,7 +149,7 @@ and open the template in the editor.
                 <span class="trippieOut"><span class="trippieIn trblue svatebniB">Svatební<br> fotografie</span></span>
                 <span class="trippieOut"><span class="trippieIn trgreen produktyB">Produktová<br> fotografie</span></span>
             </div>
-            <p>Ceník platný od 1.9.2014</p>
+            <p>Ceník platný od 1.1.2015</p>
             <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b class="hrefkontakt" style="cursor: pointer;">kontaktujte.</b></p>
 
             <h3 class="bottomBorder infoh3 portret" style="color: #A6CC5D;">Portrétní fotografie</h3>

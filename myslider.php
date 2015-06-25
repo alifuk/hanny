@@ -19,7 +19,7 @@
         </div>
 
 
-        <div class="whiteAreaInner">
+        <div class="whiteAreaInner innersobrazem">
             <img src="" class="bigImg">
         </div>
 
@@ -71,7 +71,7 @@ $adresare = array(
 echo "var fotky = [";
 $prvniAdr = true;
 foreach ($adresare as $adresar) {
-    $files = scandir($adresar, 1);
+    $files = scandir($adresar);
     $prvni = true;
     if (!$prvniAdr) {
         echo ",";
@@ -104,13 +104,7 @@ echo "];";
     $(document).ready(function () {
 
 
-
-
-
         nastavGalerii(0);
-
-
-
         nastavVysku();
 
 
@@ -351,6 +345,11 @@ echo "];";
     function nastavVysku() {
         $(".myslider").height($(window).height() / 100 * 43);
         $(".fotka").height($(window).height() / 100 * 43);
+        
+        
+        $(".bigImg").css("max-height", ($(window).height() - 80 ) +"px") ;
+        $(".bigImg").css("max-width", ($(window).width() - 80 ) +"px") ;
+        
 
         var sirka = 0; //šířka obrázků ve slideru
         $(".fotka").each(function () {
