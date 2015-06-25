@@ -17,6 +17,7 @@ if (isset($_POST['heslo']) && $_POST['heslo'] == "cangeljenej") {
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <title>Správa fotek</title>
+        
     </head>
     <body>
         <h1 style='text-align: center;'>Správa fotek</h1>

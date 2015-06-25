@@ -88,7 +88,7 @@ tr{
     height: 2px;
     top: 0;
 
-    background-color: #B4E5E4; 
+    background-color: #05A8A7; 
 }
 .spacer{
     width: 100%; 
@@ -105,7 +105,7 @@ tr{
     font-size: 37px;
     font-weight: 700;
     text-transform: none;
-    color: #B4E5E4;
+    color: #05A8A7;
     /* z-index: 5000; */
 }
 
@@ -153,7 +153,9 @@ tr{
     transition-property: color;
     transition-duration: 0.3s;
 
+    z-index: 1000;
     /* overflow: visible; */
+    position: relative;
 }
 .menuNadpis h1:hover{    
     color: #B4E5E4;
@@ -171,6 +173,7 @@ tr{
     color: #555;
     padding: 20px 0;
     margin-top: 35px;
+    z-index: 100;
 }
 
 .menuPolozka{    
@@ -194,6 +197,7 @@ tr{
     clear: both;
     float: left;
     cursor: pointer;
+    z-index: 1010;
     /* overflow-y: hidden; */
 }
 

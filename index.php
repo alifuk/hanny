@@ -11,11 +11,12 @@ and open the template in the editor.
         <title>Hanny</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
     </head>
     <body>
 
         <div class="prouzek" ></div>
-        <img src="./img/logo.png" class="logoBG">
+        <img src="./img/logo.png" class="logoBG" alt='hanny photography'>
 
         <div class="spacer" >
 
@@ -34,7 +35,15 @@ and open the template in the editor.
             </div>
 
             <div class="menuKategorie" >
-                Ženy ⋅ Rodina/Děti ⋅ Svatby  ⋅ Akt/Budoir ⋅ Těhotné ⋅ Páry ⋅ Muži ⋅ Retro ⋅ Produkty
+                <span class="zenyB">Ženy</span> ⋅ 
+                <span class="rodinaB">Rodina/Děti</span> ⋅ 
+                <span class="svatbyB">Svatby</span> ⋅ 
+                <span class="aktB">Akt/Budoir</span> ⋅ 
+                <span class="tehotneB">Těhotné</span> ⋅ 
+                <span class="paryB">Páry</span> ⋅ 
+                <span class="muziB">Muži</span> ⋅ 
+                <span class="retroB">Retro</span> ⋅ 
+                <span class="produktyB">Produkty</span> 
             </div>
 
         </div>
@@ -143,7 +152,7 @@ and open the template in the editor.
             <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b class="hrefkontakt" style="cursor: pointer;">kontaktujte.</b></p>
 
             <h3 class="bottomBorder infoh3 portret" style="color: #A6CC5D;">Portrétní fotografie</h3>
-            
+
             <h3>FOCENÍ STANDART</h3>
             <p>Lze uplatnit pro focení rodinné, foto s dětmi, rande, portréty, těhotné</p>
             <ul>
@@ -196,10 +205,10 @@ and open the template in the editor.
             <p><b>Neretušované fotografie neposkytuji!!!!</b></p>
             <p>Fotografie zálohuji cca 6 měsíců.</p>
             <p>Dle dohody mohu dojet fotografovat já k Vám, cena je poté navýšena o dopravu a techniky.</p>
-            
-            
+
+
             <h3 class="bottomBorder infoh3 svatebni" style="color: #854C97;">Svatební fotografie</h3>
-            
+
             <h3>BALÍČEK STANDART</h3>
             <ul>
                 <li>Nelze využít v sobotu!!!</li>
@@ -213,8 +222,8 @@ and open the template in the editor.
             </ul>
 
             <p>Cena: 3 000 Kč</p>
-            
-            
+
+
             <h3>BALÍČEK PREMIUM - dopolední varianta</h3>
             <ul>
                 <li>fotografování od ranních příprav nevěsty i ženicha, zdobení aut, momentky, obřad, společné foto, novomanželské foto</li>
@@ -227,8 +236,8 @@ and open the template in the editor.
             </ul>
 
             <p>Cena: 4 500 Kč</p>
-            
-            
+
+
             <h3>BALÍČEK PREMIUM - odpolední varianta</h3>
             <ul>
                 <li>fotografování od příjezdu nevěsty, obřad, společné foto, novomanželské foto, rozbíjení talíře, oběd, krájení dortu, první novomanželský tanec</li>
@@ -241,8 +250,8 @@ and open the template in the editor.
             </ul>
 
             <p>Cena: 4 500 Kč</p>
-            
-            
+
+
             <h3>BALÍČEK TOP</h3>
             <ul>
                 <li>fotografování od ranních příprav nevěsty i ženicha, zdobení aut, momentky, obřad, společné foto, novomanželské foto, rozbíjení talíře, oběd, krájení dortu, první novomanželský tanec, část párty</li>
@@ -255,7 +264,7 @@ and open the template in the editor.
             </ul>
 
             <p>Cena: 7 000 Kč</p>
-            
+
             <h3>DÁLE:</h3>
             <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši cca 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
             <p>Při fotografování odpolední varianty či varianty TOP je počítáno s obědem pro mne a mého asistenta</p>
@@ -265,7 +274,7 @@ and open the template in the editor.
             <p>Možnost dalšího potištěného DVD Vaší fotkou (např. dárek pro rodiče, svědky)s retušovanými fotografiemi + 50</p>
             <p>Fotografie zálohuji cca 1 rok</p>
             <p>Nabízím také líčení nevěsty, cena včetně zkoušky je 800,-Kč</p>
-            
+
             <p>Možnosti tisku navíc</p>
             <ul>
                 <li>A6 (cca 10x15cm) + 10 Kč</li>
@@ -295,7 +304,6 @@ and open the template in the editor.
                     if (zvoleneMenu !== coZobrazit) {
                         zvoleneMenu = coZobrazit;
                         hideAll();
-
                         setTimeout(function () {
                             $("." + coZobrazit).slideToggle(trvaniPrechodu);
                         }, trvaniPrechodu);
@@ -304,106 +312,100 @@ and open the template in the editor.
                 }
 
                 setSpacer();
-
                 $(".info, .kontakt, .cenik, .slider").hide();
-                $(".slider").show();
+                //$(".slider").show();
 
-
-
-                $(".menuNadpis").click(function () {
-                    zobraz("slider");
-                    setTimeout(function () {
-                        move(moveStep);
-                    }, trvaniPrechodu);
+                $(".aktB").click(function () {
+                    nastavGalerii(1);
                 });
 
-                $(".menuKategorie").click(function () {
-                    zobraz("slider");
-                    setTimeout(function () {
-                        move(moveStep);
-                    }, trvaniPrechodu);
+                $(".muziB").click(function () {
+                    nastavGalerii(2);
                 });
+
+                $(".paryB").click(function () {
+                    nastavGalerii(3);
+                });
+
+                $(".produktyB").click(function () {
+                    nastavGalerii(4);
+                });
+
+                $(".retroB").click(function () {
+                    nastavGalerii(5);
+                });
+
+                $(".rodinaB").click(function () {
+                    nastavGalerii(6);
+                });
+
+                $(".svatbyB").click(function () {
+                    nastavGalerii(7);
+                });
+                $(".tehotneB").click(function () {
+                    nastavGalerii(8);
+                });
+                $(".zenyB").click(function () {
+                    nastavGalerii(0);
+                });
+
+
+
+
+
 
 
                 $(".menuInfo").click(function () {
                     zobraz("info");
                 });
-
-
                 $(".menuKontakt, .hrefkontakt").click(function () {
                     zobraz("kontakt");
-
                 });
-
                 $(".menuCenik").click(function () {
                     zobraz("cenik");
                 });
-
                 $(".fb").click(function () {
 
                 });
-
-
-
-
                 $(".prvniB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".prvni").offset().top - 10
                     }, 1000);
                 });
-
                 $(".spolupraceB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".spoluprace").offset().top - 10
                     }, 1000);
                 });
-
                 $(".workshopyB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".workshopy").offset().top - 10
                     }, 1000);
                 });
-
-
-
-
                 $(".portretB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".portret").offset().top - 10
                     }, 1000);
                 });
-                
                 $(".svatebniB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".svatebni").offset().top - 10
                     }, 1000);
                 });
-
-
-
-
-
                 $(".socicon,.rotate").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function () {
                     $(this).removeClass("otocka");
                 });
-
                 $(".socicon,.rotate").hover(function () {
                     $(this).addClass("otocka");
                 }, function () {
                 });
-                
-                setTimeout(function(){
+                setTimeout(function () {
                     $(".emailName").html("hanny.sv1");
-                },3000);
-
-
-
+                }, 3000);
             });
-
             $(window).resize(function () {
                 setSpacer();
             });
-
             function setSpacer() {
                 $(".spacer").height($(window).height() / 100 * 13);
             }
@@ -415,7 +417,6 @@ and open the template in the editor.
                         $(this).slideToggle(trvaniPrechodu);
                     }
                 });
-
             }
 
         </script>
