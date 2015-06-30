@@ -23,9 +23,9 @@ and open the template in the editor.
             <div class="telnum">Tel.: 775 139 153</div>
         </div>
 
-        
-        
-        
+
+
+
         <div class="menuObal" >
 
             <div class="menuNadpis" >
@@ -65,10 +65,53 @@ and open the template in the editor.
 
             <div class="prvni">
                 <h3 style="color: #05A8A7;" class="bottomBorder">První focení</h3>
-                <p>Základem je se den před focením pokud možno dobře vyspat, v den focení se nedoporučuje návštěva kosmetiky ani solária a pokud budeme fotit akty je důležité mít volnější prádlo, aby nebyly na kůži žádné známky nošení – sice pracuji následně s Photoshopem, ale jsem ráda, když fotka vypadá, co nejlépe již po zmáčknutí spouště a Vy přeci jen dostanete fota všechna, nejen vyretušovaná :-)</p>
-                <p>Na focení si s sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
-                <p>Při focení v páru nebo u rodinného focení je dobré vše dobře promyslet a sladit dopředu, ať je výsledek na fotografii příjemný.</p>
-                <p>A na závěr je dobré říct mi dopředu, jaká je Vaše představa, abychom věděli jakým směrem se bude focení ubírat a mohli jsme se na to dobře připravit :-) Pokud bude třeba s líčením, půjčením doplňků a šperků Vám ráda pomohu :-)</p>
+
+                <p>Pokud se jdete fotit poprvé, nemějte zbytečné obavy</p> 
+
+                <p>Základem je se pokud možno dobře vyspat a v den focení ani den předem nedoporučuji 
+
+                    návštěvu kosmetiky či solária. </p> 
+
+                <p>Pokud budeme fotit akty či boudou, je dobré přijít ve volnějším prádle, aby na kůži nebyly 
+
+                    patrné známky otlačenin  S sebou si sbalte spodní prádlo, punčochy, lodičky, šperky, 
+
+                    propínací svetříky, pánskou košili …</p> 
+
+                <p>Pro portrétní focení je dobré si s sebou sbalit více oblečení. Volte takové, v kterém se 
+
+                    dobře cítíte a víte, že Vám sluší. Barevnost není až tak důležitá, snad jen pokud chcete 
+
+                    pouze černobílé foto, tak nedoporučuji odstíny pastelové a červené. Dále si vezměte  
+
+                    různé doplňky, šátky, výraznější šperky… </p> 
+
+                <p>V případě focení dětí myslete i na přebalovací podložku, oblíbené plyšáky, plédy, huňaté 
+
+                    deky… </p> 
+
+                <p>Při párovém nebo rodinném focení je dobré vše dobře předem promyslet a sladit, ať je 
+
+                    výsledek na fotografiích příjemný. Oblečení slaďte k sobě pokud možno nenásilně. Mohu 
+
+                    doporučit džíny a bílá či námořnická trika, to nikdy nezklame (rozhodně si dejte pozor na 
+
+                    mixování vzorů!) </p> 
+
+                <p>A na závěr je dobré říct mi dopředu, jaká je Vaše představa, domluvit se, zda budeme 
+
+                    fotit v ateliéru či exteriéru, kolik výsledných fotografií si představujete a zda budete chtít 
+
+                    využít možnost líčení a účesu (v tomto případě počítejte s příplatkem cca 500 kaček a 
+
+                    časem cca 1,5 hod navíc) </p>  
+
+                <p>V ateliéru mám samozřejmě k dispozici plno doplňků, šperků, rekvizit, kožíšků, košíků 
+
+                    atd. Na focení je možné si cokoliv zapůjčit.</p> 
+
+                <p>V případě dalších dotazů mne kontaktujte </p> 
+
 
             </div>
 
@@ -131,11 +174,11 @@ and open the template in the editor.
                 <h4 style="text-transform: none;">Tel.: 775 139 153</h4>
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
-                <img src="./img/fb.png" class="socicon fb" onclick="window.open('https://www.facebook.com/HannyPhotography?fref=ts','_blank');">
-                <img src="./img/instagram.png" class="socicon instagram"  onclick="window.open('https://instagram.com/hanny_photo/','_blank');">
-                <img src="./img/flickr.png" class="socicon flickr"  onclick="window.open('https://www.flickr.com/photos/127960118@N03/','_blank');">
-                <img src="./img/linkedin.png" class="socicon linkedin"  onclick="window.open('https://www.linkedin.com/profile/view?id=415112365&trk=nav_responsive_tab_profile','_blank');">
-                <img src="./img/maps.png" class="socicon mapy"  onclick="window.open('http://mapy.cz/zakladni?x=14.4663423&y=50.7805218&z=17&source=addr&id=10615252','_blank');">
+                <img src="./img/fb.png" class="socicon fb" onclick="window.open('https://www.facebook.com/HannyPhotography?fref=ts', '_blank');">
+                <img src="./img/instagram.png" class="socicon instagram"  onclick="window.open('https://instagram.com/hanny_photo/', '_blank');">
+                <img src="./img/flickr.png" class="socicon flickr"  onclick="window.open('https://www.flickr.com/photos/127960118@N03/', '_blank');">
+                <img src="./img/linkedin.png" class="socicon linkedin"  onclick="window.open('https://www.linkedin.com/profile/view?id=415112365&trk=nav_responsive_tab_profile', '_blank');">
+                <img src="./img/maps.png" class="socicon mapy"  onclick="window.open('http://mapy.cz/zakladni?x=14.4663423&y=50.7805218&z=17&source=addr&id=10615252', '_blank');">
             </div>
 
 
@@ -147,7 +190,7 @@ and open the template in the editor.
             <div class="trippleObal">
                 <span class="trippieOut"><span class="trippieIn trred portretB">Portrétní<br> fotografie</span></span>
                 <span class="trippieOut"><span class="trippieIn trblue svatebniB">Svatební<br> fotografie</span></span>
-                <span class="trippieOut"><span class="trippieIn trgreen produktyB">Produktová<br> fotografie</span></span>
+                <span class="trippieOut"><span class="trippieIn trgreen produktovaB">Produktová<br> fotografie</span></span>
             </div>
             <p>Ceník platný od 1.1.2015</p>
             <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b class="hrefkontakt" style="cursor: pointer;">kontaktujte.</b></p>
@@ -284,6 +327,22 @@ and open the template in the editor.
             </ul>
 
 
+
+
+            <h3 class="bottomBorder infoh3 produktova" style="color: #854C97;">PRODUKTOVÁ FOTOGRAFIE</h3>
+
+            <p>Ceny jsou individuální dle rozsahu práce a časové náročnosti (orientačně se cena pohybuje kolem 150-
+
+                250Kč za foto)</p>
+
+            <p>Dle dohody mohu přijet fotit i já k Vám nebo kam je třeba. Dopravné účtuji 5 Kč/km.</p>
+
+            <p>Pro bližší informace a přibližnou kalkulaci mne kontaktujte.</p>
+
+
+
+
+
         </div>
 
 
@@ -315,6 +374,13 @@ and open the template in the editor.
                 setSpacer();
                 $(".info, .kontakt, .cenik, .slider").hide();
                 //$(".slider").show();
+
+
+
+                
+                $(".menuNadpis").click(function () {
+                    nastavGalerii(0);
+                });
 
                 $(".aktB").click(function () {
                     nastavGalerii(1);
@@ -383,6 +449,14 @@ and open the template in the editor.
                         scrollTop: $(".workshopy").offset().top - 10
                     }, 1000);
                 });
+                
+                
+                $(".produktovaB").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $(".produktova").offset().top - 10
+                    }, 1000);
+                });
+                
                 $(".portretB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".portret").offset().top - 10
