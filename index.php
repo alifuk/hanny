@@ -43,7 +43,7 @@ and open the template in the editor.
                 <span class="zenyB">Ženy</span> ⋅ 
                 <span class="rodinaB">Rodina/Děti</span> ⋅ 
                 <span class="svatbyB">Svatby</span> ⋅ 
-                <span class="aktB">Akt/Budoir</span> ⋅ 
+                <span class="aktB">Akt/Boudoir</span> ⋅ 
                 <span class="tehotneB">Těhotné</span> ⋅ 
                 <span class="paryB">Páry</span> ⋅ 
                 <span class="muziB">Muži</span> ⋅ 
