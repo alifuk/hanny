@@ -131,8 +131,8 @@ tr{
 
     width: 71%;
     margin: 0 auto;
-    overflow: auto;
-    height: auto;
+    //overflow: auto;
+    height: 100px;
     margin-bottom: 46px;
     /* word-wrap: break-word; */
     max-width: 1000px;

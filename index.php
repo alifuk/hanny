@@ -12,6 +12,14 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+        <meta property="og:title"
+              content="Hanny photography" />
+        <meta property="og:site_name" content="Hanny photography"/>
+        <meta property="og:url"
+              content="http://hanny-photo.cz/" />
+        <meta property="og:description" content="Fotogalerie Hanny photography" />
+        <meta property="og:image"
+              content="http://hanny-photo.cz/img/hanny.jpg" />
     </head>
     <body>
 
@@ -213,7 +221,7 @@ and open the template in the editor.
             <p>Lze uplatnit maximálně pro 2 osoby</p>
             <ul>
                 <li>cca 30 min focení</li>
-                <li>5 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho v plném rozlišení na CD/DVD</li>
+                <li>5 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho výběru v plném rozlišení na CD/DVD</li>
                 <li>tisk všech fotografií o velikosti A6 nebo 2 ks o velikosti A5 nebo 1 ks o velikosti A4</li>
                 <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
                 <li>potištěné DVD</li>
@@ -310,7 +318,7 @@ and open the template in the editor.
             <p>Cena: 7 000 Kč</p>
 
             <h3>DÁLE:</h3>
-            <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši cca 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
+            <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši minimálně 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
             <p>Při fotografování odpolední varianty či varianty TOP je počítáno s obědem pro mne a mého asistenta</p>
             <p>Dodací doba je dle mé zaneprázdněnosti cca 3 týdny, ale nebojte, ochutnávku z Vaší svatby dostanete do 3 dnů</p>
             <p>Dopravné je 5 Kč/km nad 30 km</p>
@@ -377,7 +385,7 @@ and open the template in the editor.
 
 
 
-                
+
                 $(".menuNadpis").click(function () {
                     nastavGalerii(0);
                 });
@@ -449,14 +457,14 @@ and open the template in the editor.
                         scrollTop: $(".workshopy").offset().top - 10
                     }, 1000);
                 });
-                
-                
+
+
                 $(".produktovaB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".produktova").offset().top - 10
                     }, 1000);
                 });
-                
+
                 $(".portretB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".portret").offset().top - 10
