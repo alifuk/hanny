@@ -12,7 +12,9 @@
 .clear{
     clear: both;
 }
-
+html{
+    overflow-x: hidden;
+}
 
 body{
     text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -110,11 +112,12 @@ tr{
 }
 
 .logoBG{
-    position: fixed;
+    position: absolute;
     z-index: 100;
     opacity: 1.1;
     top: -30px;
     left: -30px;
+    max-width: 30%;
     /* display: none; */
 }
 
@@ -160,6 +163,7 @@ tr{
 .menuNadpis h1:hover{    
     color: #05A8A7;
 }
+
 
 
 .menuPolozky{
@@ -216,6 +220,8 @@ tr{
 
 .slider{
     position: relative;
+    width: 100%;
+    overflow: hidden;
 
     //transform: rotateY(90deg);
 
@@ -355,7 +361,7 @@ tr{
     top: 0;
     padding: 40px;
     left: 0;
-    
+
     box-sizing: border-box;
     position: absolute;
 }
@@ -474,7 +480,7 @@ tr{
 
 
 .info, .kontakt, .cenik{
-    width: 800px;
+    max-width: 800px;
     padding: 20px;
     //max-width: 800px;
     margin: 0 auto;
@@ -563,10 +569,68 @@ tr{
 }
 
 
+@media (max-width: 600px){
+    .spacer{
+
+        top: 20px;
+    }
+
+    .menuObal, .telnum{
+
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        right: auto;
+        width: 100%;
+    }
+
+    .menuNadpis{
+
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menuPolozky{
+
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
 
 
-.cenik{
+    .menuNadpis h1{
+        font-size: 30px;
+        margin-top: 56px;
+    }
 
+    .telnum{
+        font-size: 20px;        
+    }
 
+    .kontaktImg{
+        width: 100% !important;
+        float: none !important;
+        margin-right: 0 !important;
+    }
+
+    .logoBG{
+        left: 20px;
+        top: 0;
+    }
+
+    .trippieOut{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .trippieOut{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        padding: 8px;
+    }
 
 }

@@ -72,13 +72,18 @@ if (isset($_GET['slozka'])) {
         <div style="width: 500px; margin: 0 auto;">
             
             <?php
-            if(isset($_SESSION['nahrano']) && $_SESSION['nahrano'] == true){
-                echo "<h3 style='color:green;'>fotky nahrány!</h3>";
+            if(isset($_SESSION['nahrano']) && $_SESSION['nahrano'] != true && isset($_SESSION['velka']) && $_SESSION['velka'] == true){
+                echo "<h2 style='color:red;'>fotka příliš velká!</h2>";
                 $_SESSION['nahrano'] = false;
+                unset($_SESSION['velka']);
+            } else if (isset($_SESSION['nahrano']) && $_SESSION['nahrano'] == true){
+                echo "<h2 style='color:green;'>fotky nahrány!</h2>";
+                $_SESSION['nahrano'] = false;                
+                unset($_SESSION['velka']);
             }
             
             if(isset($_SESSION['smazano']) && $_SESSION['smazano'] == true){
-                echo "<h3 style='color:green;'>fotka smazána!</h3>";
+                echo "<h2 style='color:green;'>fotka smazána!</h2>";
                 $_SESSION['smazano'] = false;
             }
             
@@ -96,7 +101,8 @@ if (isset($_GET['slozka'])) {
 
                 foreach ($files as $fotka) {
                     if ($fotka != "." && $fotka != "..") {
-                        echo "<div style='margin-bottom: 20px;' ><img  src='" . $dir . $fotka . "' style='max-height: 200px; max-width: 200px;'><a href='smazatFoto.php?name=" . $fotka . "'> Smazat fotku</a></div>";
+                        echo "<div style='margin-bottom: 20px;' ><img  src='" . $dir . $fotka . "' style='max-height: 200px; max-width: 200px; vertical-align:middle;'>
+                            <a style='padding-bottom: 30px; display: inline-block;' href='smazatFoto.php?name=" . $fotka . "'> Smazat fotku</a></div>";
                     }
                 }
             }

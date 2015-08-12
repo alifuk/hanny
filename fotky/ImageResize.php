@@ -55,7 +55,7 @@ class ImageResize {
      */
     public function __construct($filename) {
 
-        echo "ahoj";
+        //echo "ahoj";
 
         $image_info = @getimagesize($filename);
 

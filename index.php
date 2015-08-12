@@ -8,8 +8,10 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>Hanny</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css?version=4">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
     </head>
@@ -23,9 +25,9 @@ and open the template in the editor.
             <div class="telnum">Tel.: 775 139 153</div>
         </div>
 
-        
-        
-        
+
+
+
         <div class="menuObal" >
 
             <div class="menuNadpis" >
@@ -131,11 +133,11 @@ and open the template in the editor.
                 <h4 style="text-transform: none;">Tel.: 775 139 153</h4>
                 <h4>Nádražní 144, Kamenický Šenov</h4>
                 <h4>IČ: 74431382</h4>
-                <img src="./img/fb.png" class="socicon fb" onclick="window.open('https://www.facebook.com/HannyPhotography?fref=ts','_blank');">
-                <img src="./img/instagram.png" class="socicon instagram"  onclick="window.open('https://instagram.com/hanny_photo/','_blank');">
-                <img src="./img/flickr.png" class="socicon flickr"  onclick="window.open('https://www.flickr.com/photos/127960118@N03/','_blank');">
-                <img src="./img/linkedin.png" class="socicon linkedin"  onclick="window.open('https://www.linkedin.com/profile/view?id=415112365&trk=nav_responsive_tab_profile','_blank');">
-                <img src="./img/maps.png" class="socicon mapy"  onclick="window.open('http://mapy.cz/zakladni?x=14.4663423&y=50.7805218&z=17&source=addr&id=10615252','_blank');">
+                <img src="./img/fb.png" class="socicon fb" onclick="window.open('https://www.facebook.com/HannyPhotography?fref=ts', '_blank');">
+                <img src="./img/instagram.png" class="socicon instagram"  onclick="window.open('https://instagram.com/hanny_photo/', '_blank');">
+                <img src="./img/flickr.png" class="socicon flickr"  onclick="window.open('https://www.flickr.com/photos/127960118@N03/', '_blank');">
+                <img src="./img/linkedin.png" class="socicon linkedin"  onclick="window.open('https://www.linkedin.com/profile/view?id=415112365&trk=nav_responsive_tab_profile', '_blank');">
+                <img src="./img/maps.png" class="socicon mapy"  onclick="window.open('http://mapy.cz/zakladni?x=14.4663423&y=50.7805218&z=17&source=addr&id=10615252', '_blank');">
             </div>
 
 
@@ -297,14 +299,87 @@ and open the template in the editor.
 
         <script>
             var trvaniPrechodu = 500;
-            var zvoleneMenu = "";
             $(document).ready(function () {
+
+                /*
+                 $(window).bind('hashchange', function () {
+                 alert("WOW");
+                 });
+                 */
+
+                if (window.location.hash) {
+                    nastavPodleHashe();
+                }
+                else {
+                    nastavGalerii(0);
+                    nastavVysku();
+                }
+
+                function nastavPodleHashe() {
+
+                    var hash = window.location.hash;
+                    hash = hash.replace("#", "");
+
+                    if (hash.indexOf("galerie") == -1) {
+                        zobraz(hash);
+                    } else {
+                        hash = hash.replace("galerie-", "");
+
+
+                        switch (hash) {
+                            case "zeny":
+                                hash = 0;
+                                break;
+                            case "akt":
+                                hash = 1;
+                                break;
+                            case "muzi":
+                                hash = 2;
+                                break;
+                            case "pary":
+                                hash = 3;
+                                break;
+                            case "produkty":
+                                hash = 4;
+                                break;
+                            case "retro":
+                                hash = 5;
+                                break;
+                            case "rodina":
+                                hash = 6;
+                                break;
+                            case "svatby":
+                                hash = 7;
+                                break;
+                            case "tehotne":
+                                hash = 8;
+                                break;
+                        }
+
+
+                        nastavGalerii(hash);
+                    }
+
+
+                }
 
 
                 function zobraz(coZobrazit) {
+
                     if (zvoleneMenu !== coZobrazit) {
                         zvoleneMenu = coZobrazit;
                         hideAll();
+
+                        var adress = location.pathname;
+                        var indexHas = adress.indexOf("#");
+                        if (indexHas == -1) {
+                            adress = adress + "#" + coZobrazit;
+                        } else {
+                            adress = adress.substr(0, indexHas);
+                            adress = adress + "#" + coZobrazit;
+                        }
+                        history.pushState(null, null, adress);
+
                         setTimeout(function () {
                             $("." + coZobrazit).slideToggle(trvaniPrechodu);
                         }, trvaniPrechodu);
@@ -312,9 +387,18 @@ and open the template in the editor.
 
                 }
 
+                window.addEventListener("popstate", function (e) {
+                    nastavPodleHashe();
+                });
+
                 setSpacer();
+
                 $(".info, .kontakt, .cenik, .slider").hide();
                 //$(".slider").show();
+
+
+
+
 
                 $(".aktB").click(function () {
                     nastavGalerii(1);
@@ -365,9 +449,13 @@ and open the template in the editor.
                 $(".menuCenik").click(function () {
                     zobraz("cenik");
                 });
+
                 $(".fb").click(function () {
 
                 });
+
+
+
                 $(".prvniB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".prvni").offset().top - 10
@@ -404,9 +492,11 @@ and open the template in the editor.
                     $(".emailName").html("hanny.sv1");
                 }, 3000);
             });
+
             $(window).resize(function () {
                 setSpacer();
             });
+
             function setSpacer() {
                 $(".spacer").height($(window).height() / 100 * 13);
             }
@@ -421,6 +511,22 @@ and open the template in the editor.
             }
 
         </script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
+            ga('create', 'UA-65759538-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
     </body>
 </html>

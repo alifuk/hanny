@@ -95,17 +95,16 @@ foreach ($adresare as $adresar) {
 
 echo "];";
 ?>
-    var moveStep = 800;
+    var moveStep = $(window).width() / 100 * 40;
     var timerTime = 3000; //časovač v ms po kolika se slider automaticky pohne
     var canMove = true; //pokud je kurzor nad sliderem, tak se to nebude pohybovat
     var movesRight = true;
     var swiping = false;
     var aktualniGalerie = 0;
+
+    var zvoleneMenu = "";
+    
     $(document).ready(function () {
-
-
-        nastavGalerii(0);
-        nastavVysku();
 
 
         $(".whiteArea").fadeTo(400, 0, function () {
@@ -124,7 +123,7 @@ echo "];";
 
         $(function () {
 
-            $(".slider").swipe({
+            $(".slider, .whiteArea").swipe({
                 //Generic swipe handler for all directions
                 swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
 
@@ -183,12 +182,12 @@ echo "];";
 
         $(document).on('click', '.fotka', function (event) {
             THIS = $(this);
-            
+
             setTimeout(function () {
 
                 if (!swiping) {
-                    
-                    
+
+
                     $(".whiteArea").show();
                     $(".whiteArea").fadeTo(400, 1);
                     canMove = false;
@@ -224,12 +223,7 @@ echo "];";
                     });
                     canMove = true;
                 }
-
             }, 50);
-
-
-
-
         });
 
         timeruj();
@@ -302,11 +296,60 @@ echo "];";
 
 
     function nastavGalerii(zvolenaKategorie) {
-        aktualniGalerie = zvolenaKategorie;
-        hideAll();
-        setTimeout(function () {
-            zmenKodGalerie(zvolenaKategorie);
-        }, trvaniPrechodu);
+        if (zvoleneMenu !== zvolenaKategorie) {
+            zvoleneMenu = zvolenaKategorie;
+
+
+            aktualniGalerie = zvolenaKategorie;
+
+
+            var adress = location.pathname;
+            var indexHas = adress.indexOf("#");
+            if (indexHas != -1) {
+                adress = adress.substr(0, indexHas);
+            }
+            var str = ""; //jméno kategorie odpovídající číslu
+            switch (zvolenaKategorie) {
+                case 0:
+                    str = "zeny";
+                    break;
+                case 1:
+                    str = "akt";
+                    break;
+                case 2:
+                    str = "muzi";
+                    break;
+                case 3:
+                    str = "pary";
+                    break;
+                case 4:
+                    str = "produkty";
+                    break;
+                case 5:
+                    str = "retro";
+                    break;
+                case 6:
+                    str = "rodina";
+                    break;
+                case 7:
+                    str = "svatby";
+                    break;
+                case 8:
+                    str = "tehotne";
+                    break;
+            }
+
+            adress = adress + "#galerie-" + str;
+            history.pushState(adress, adress, adress);
+
+
+            hideAll();
+
+            setTimeout(function () {
+                zmenKodGalerie(zvolenaKategorie);
+            }, trvaniPrechodu);
+        }
+
     }
 
     function zmenKodGalerie(zvolenaKategorie) {
@@ -344,12 +387,15 @@ echo "];";
 
     function nastavVysku() {
         $(".myslider").height($(window).height() / 100 * 43);
+        $(".slider").width($(window).width());
+
+
         $(".fotka").height($(window).height() / 100 * 43);
-        
-        
-        $(".bigImg").css("max-height", ($(window).height() - 80 ) +"px") ;
-        $(".bigImg").css("max-width", ($(window).width() - 80 ) +"px") ;
-        
+
+
+        $(".bigImg").css("max-height", ($(window).height() - 80) + "px");
+        $(".bigImg").css("max-width", ($(window).width() - 80) + "px");
+
 
         var sirka = 0; //šířka obrázků ve slideru
         $(".fotka").each(function () {
