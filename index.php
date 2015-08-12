@@ -14,6 +14,14 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css?version=4">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+        <meta property="og:title"
+              content="Hanny photography" />
+        <meta property="og:site_name" content="Hanny photography"/>
+        <meta property="og:url"
+              content="http://hanny-photo.cz/" />
+        <meta property="og:description" content="Fotogalerie Hanny photography" />
+        <meta property="og:image"
+              content="http://hanny-photo.cz/img/hanny.jpg" />
     </head>
     <body>
 
@@ -45,7 +53,7 @@ and open the template in the editor.
                 <span class="zenyB">Ženy</span> ⋅ 
                 <span class="rodinaB">Rodina/Děti</span> ⋅ 
                 <span class="svatbyB">Svatby</span> ⋅ 
-                <span class="aktB">Akt/Budoir</span> ⋅ 
+                <span class="aktB">Akt/Boudoir</span> ⋅ 
                 <span class="tehotneB">Těhotné</span> ⋅ 
                 <span class="paryB">Páry</span> ⋅ 
                 <span class="muziB">Muži</span> ⋅ 
@@ -67,10 +75,53 @@ and open the template in the editor.
 
             <div class="prvni">
                 <h3 style="color: #05A8A7;" class="bottomBorder">První focení</h3>
-                <p>Základem je se den před focením pokud možno dobře vyspat, v den focení se nedoporučuje návštěva kosmetiky ani solária a pokud budeme fotit akty je důležité mít volnější prádlo, aby nebyly na kůži žádné známky nošení – sice pracuji následně s Photoshopem, ale jsem ráda, když fotka vypadá, co nejlépe již po zmáčknutí spouště a Vy přeci jen dostanete fota všechna, nejen vyretušovaná :-)</p>
-                <p>Na focení si s sebou vemte co nejvíc oblečení, doplňků, šperků – čím více, tím lépe a u dětí nezapomeňte na oblíbené hračky, případně košíky, kožíšky,…</p>  
-                <p>Při focení v páru nebo u rodinného focení je dobré vše dobře promyslet a sladit dopředu, ať je výsledek na fotografii příjemný.</p>
-                <p>A na závěr je dobré říct mi dopředu, jaká je Vaše představa, abychom věděli jakým směrem se bude focení ubírat a mohli jsme se na to dobře připravit :-) Pokud bude třeba s líčením, půjčením doplňků a šperků Vám ráda pomohu :-)</p>
+
+                <p>Pokud se jdete fotit poprvé, nemějte zbytečné obavy</p> 
+
+                <p>Základem je se pokud možno dobře vyspat a v den focení ani den předem nedoporučuji 
+
+                    návštěvu kosmetiky či solária. </p> 
+
+                <p>Pokud budeme fotit akty či boudou, je dobré přijít ve volnějším prádle, aby na kůži nebyly 
+
+                    patrné známky otlačenin  S sebou si sbalte spodní prádlo, punčochy, lodičky, šperky, 
+
+                    propínací svetříky, pánskou košili …</p> 
+
+                <p>Pro portrétní focení je dobré si s sebou sbalit více oblečení. Volte takové, v kterém se 
+
+                    dobře cítíte a víte, že Vám sluší. Barevnost není až tak důležitá, snad jen pokud chcete 
+
+                    pouze černobílé foto, tak nedoporučuji odstíny pastelové a červené. Dále si vezměte  
+
+                    různé doplňky, šátky, výraznější šperky… </p> 
+
+                <p>V případě focení dětí myslete i na přebalovací podložku, oblíbené plyšáky, plédy, huňaté 
+
+                    deky… </p> 
+
+                <p>Při párovém nebo rodinném focení je dobré vše dobře předem promyslet a sladit, ať je 
+
+                    výsledek na fotografiích příjemný. Oblečení slaďte k sobě pokud možno nenásilně. Mohu 
+
+                    doporučit džíny a bílá či námořnická trika, to nikdy nezklame (rozhodně si dejte pozor na 
+
+                    mixování vzorů!) </p> 
+
+                <p>A na závěr je dobré říct mi dopředu, jaká je Vaše představa, domluvit se, zda budeme 
+
+                    fotit v ateliéru či exteriéru, kolik výsledných fotografií si představujete a zda budete chtít 
+
+                    využít možnost líčení a účesu (v tomto případě počítejte s příplatkem cca 500 kaček a 
+
+                    časem cca 1,5 hod navíc) </p>  
+
+                <p>V ateliéru mám samozřejmě k dispozici plno doplňků, šperků, rekvizit, kožíšků, košíků 
+
+                    atd. Na focení je možné si cokoliv zapůjčit.</p> 
+
+                <p>V případě dalších dotazů mne kontaktujte </p> 
+
 
             </div>
 
@@ -149,7 +200,7 @@ and open the template in the editor.
             <div class="trippleObal">
                 <span class="trippieOut"><span class="trippieIn trred portretB">Portrétní<br> fotografie</span></span>
                 <span class="trippieOut"><span class="trippieIn trblue svatebniB">Svatební<br> fotografie</span></span>
-                <span class="trippieOut"><span class="trippieIn trgreen produktyB">Produktová<br> fotografie</span></span>
+                <span class="trippieOut"><span class="trippieIn trgreen produktovaB">Produktová<br> fotografie</span></span>
             </div>
             <p>Ceník platný od 1.1.2015</p>
             <p>Na veškeré níže uvedené služby je možné vystavit dárkovou poukázku. Pro více info mě <b class="hrefkontakt" style="cursor: pointer;">kontaktujte.</b></p>
@@ -172,7 +223,7 @@ and open the template in the editor.
             <p>Lze uplatnit maximálně pro 2 osoby</p>
             <ul>
                 <li>cca 30 min focení</li>
-                <li>5 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho v plném rozlišení na CD/DVD</li>
+                <li>5 ks retušovaných fotografií (každá v barevné i černobílé variantě) dle Vašeho výběru v plném rozlišení na CD/DVD</li>
                 <li>tisk všech fotografií o velikosti A6 nebo 2 ks o velikosti A5 nebo 1 ks o velikosti A4</li>
                 <li>každá další retušovaná fotografie + 80 Kč (bez tisku)</li>
                 <li>potištěné DVD</li>
@@ -269,7 +320,7 @@ and open the template in the editor.
             <p>Cena: 7 000 Kč</p>
 
             <h3>DÁLE:</h3>
-            <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši cca 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
+            <p>V ceně svatebního focení je předsvatební schůzka, při které probereme Vaše přání a představy, kde fotografování závazně potvrdíme zálohou ve výši minimálně 1 000 Kč. Domluvíme se na místě, kde bude probíhat novomanželské fotografování a na případných rekvizitách</p>
             <p>Při fotografování odpolední varianty či varianty TOP je počítáno s obědem pro mne a mého asistenta</p>
             <p>Dodací doba je dle mé zaneprázdněnosti cca 3 týdny, ale nebojte, ochutnávku z Vaší svatby dostanete do 3 dnů</p>
             <p>Dopravné je 5 Kč/km nad 30 km</p>
@@ -284,6 +335,22 @@ and open the template in the editor.
                 <li>A5 (cca 15x20m) + 25 Kč</li>
                 <li>A4 (cca 20x30cm) + 50 Kč</li>
             </ul>
+
+
+
+
+            <h3 class="bottomBorder infoh3 produktova" style="color: #854C97;">PRODUKTOVÁ FOTOGRAFIE</h3>
+
+            <p>Ceny jsou individuální dle rozsahu práce a časové náročnosti (orientačně se cena pohybuje kolem 150-
+
+                250Kč za foto)</p>
+
+            <p>Dle dohody mohu přijet fotit i já k Vám nebo kam je třeba. Dopravné účtuji 5 Kč/km.</p>
+
+            <p>Pro bližší informace a přibližnou kalkulaci mne kontaktujte.</p>
+
+
+
 
 
         </div>
@@ -399,6 +466,9 @@ and open the template in the editor.
 
 
 
+                $(".menuNadpis").click(function () {
+                    nastavGalerii(0);
+                });
 
                 $(".aktB").click(function () {
                     nastavGalerii(1);
@@ -471,6 +541,14 @@ and open the template in the editor.
                         scrollTop: $(".workshopy").offset().top - 10
                     }, 1000);
                 });
+
+
+                $(".produktovaB").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $(".produktova").offset().top - 10
+                    }, 1000);
+                });
+
                 $(".portretB").click(function () {
                     $('html, body').animate({
                         scrollTop: $(".portret").offset().top - 10
